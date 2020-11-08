@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200203120229_Orders.cs" />
+    <Compile Remove="Migrations\20200203120229_Orders.Designer.cs" />
+    <Compile Remove="Migrations\20201108100639_Initial.cs" />
+    <Compile Remove="Migrations\20201108100639_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201108100735_order.cs" />
+    <Compile Remove="Migrations\20201108100735_order.Designer.cs" />
+    <Compile Remove="Migrations\20201108160750_Products.cs" />
+    <Compile Remove="Migrations\20201108160750_Products.Designer.cs" />
+    <Compile Remove="Migrations\20201108160940_Produc.cs" />
+    <Compile Remove="Migrations\20201108160940_Produc.Designer.cs" />
+    <Compile Remove="Migrations\20201108161226_Initial.cs" />
+    <Compile Remove="Migrations\20201108161226_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Views\Home\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
